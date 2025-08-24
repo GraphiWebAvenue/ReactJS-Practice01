@@ -2,13 +2,12 @@ import { Button } from "./Button";
 import "./Form.css";
 import { Input } from "./Input";
 
-export const Form = ({ tilte_form, btn_text_form }) => {
+export const Form = ({ title_form, btn_text_form, children }) => {
   return (
     <>
       <form className="form">
-        <h2>{tilte_form}</h2>
-        <Input type={"email"} label_text={"Enter Your Email:"}></Input>
-        <Input type={"password"} label_text={"Enter Your Password:"}></Input>
+        <h2>{title_form}</h2>
+        {children}
         <Button btn_text_form={btn_text_form}></Button>
       </form>
     </>
