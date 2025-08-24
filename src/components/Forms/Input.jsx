@@ -1,9 +1,8 @@
-import style from "./Input.module.css";
-export const Input = () => {
+export const Input = ({ type, label_text }) => {
   return (
-    <>
-      <input></input>
-      <button className={style.btn}>سابمیت کن</button>
-    </>
+    <label>
+      <span>{label_text}</span>
+      <input type={type}></input>
+    </label>
   );
 };
