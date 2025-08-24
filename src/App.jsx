@@ -1,10 +1,11 @@
-import { Button } from "./components/Buttons/Button";
+import { Button1, Button2 } from "./components/Buttons/Button";
 import { Input } from "./components/Forms/Input";
 
 function App() {
   return (
     <>
-      <Button></Button>
+      <Button1></Button1>
+      <Button2></Button2>
       <Input></Input>
     </>
   );
